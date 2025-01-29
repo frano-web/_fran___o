@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strona Sportowca - Dawid Frankowiak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            text-align: center; /* Wypośrodkowanie tekstu */
+            background: linear-gradient(to bottom, #ffffff, #f0f0f0); /* Delikatny gradient od białego do szarego */
+        }
+        header {
+            background: url('zdj2.jpg') no-repeat center center/cover; /* Zastąp 'twoje-zdjecie-w-tle.jpg' zdjęciem tła */
+            color: white;
+            padding: 10% 2%;
+            position: relative;
+            background-attachment: fixed; /* Efekt przewijania tła */
+        }
+        header .profile {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        header .profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10%;
+            border: 3px solid white;
+            margin-right: 20px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2%;
+            background: #6c757d; /* Zmieniono na szary kolor */
+            padding: 1% 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        section {
+            padding: 5%;
+            margin: 0 auto;
+            max-width: 90%;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            text-align: left;
+            margin: 0 auto;
+            padding: 0;
+            max-width: 600px;
+            list-style-position: inside;
+        }
+        footer {
+            background: #6c757d; /* Zmieniono na szary kolor */
+            color: white;
+            padding: 1% 0;
+            font-size: 0.9rem;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .social-links a {
+            background-color: #6c757d; /* Zmieniono na szary kolor */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: #5a6268; /* Zmieniono na ciemniejszy szary */
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            background: #6c757d; /* Zmieniono na szary kolor */
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .achievements-container {
+            position: relative;
+        }
+        .achievements-extra {
+            display: none;
+        }
+        .toggle-achievements,
+        .toggle-collapse {
+            display: inline-block;
+            background: #6c757d; /* Zmieniono na szary kolor */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+        .toggle-achievements:hover,
+        .toggle-collapse:hover {
+            background: #5a6268; /* Zmieniono na ciemniejszy szary */
+        }
+        .toggle-collapse {
+            position: fixed;
+            bottom: 1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: none;
+        }
+        .about-extra {
+            display: none;
+        }
+        .toggle-about {
+            display: inline-block;
+            background: #6c757d; /* Zmieniono na szary kolor */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 1rem;
+            transition: background 0.3s ease;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="profile">
+            <img src="zdj1.jpg" alt="Zdjęcie profilowe">
+            <h1>Dawid Frankowiak</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="#about">O mnie</a>
+        <a href="#achievements">Osiągnięcia</a>
+        <a href="#collaborations">Współprace</a>
+        <a href="#social">Social Media</a>
+    </nav>
+
+    <!-- Sekcja O mnie -->
+    <section id="about">
+        <h2 class="section-title">O mnie</h2>
+        <p>Nazywam się Dawid Frankowiak, mam 16 lat, a moją największą pasją jest kolarstwo, w szczególności jazda na rowerze w terenie. Od 2019 roku jestem zawodnikiem klubu Victoria Jarocin, który prowadzony jest przez państwa Miklerów. Przez te 5 lat intensywnych treningów udało mi się osiągnąć szereg małych sukcesów, które motywują mnie do dalszego rozwoju.
+
+Codzienne treningi to dla mnie... </p>
+        <div class="about-extra">
+            <p>naturalna część życia. Ciężko mi określić, co dokładnie motywuje mnie do wstawania o poranku, by wykonać zaplanowany trening – to po prostu wychodzi samo z siebie. Kiedy zaczynam dzień, wiem, że muszę dać z siebie wszystko na odpowiedniej intensywności. Lubię również dzielić się moimi treningami i życiem z moimi obserwatorami na Instagramie, gdzie publikuję zdjęcia z tras, uchwycone momenty, czy po prostu dzielę się swoim życiem. Mam grono odbiorców, którzy doceniają moją autentyczność i szanują moją pasję.
+
+Moim celem jest nieustanne doskonalenie swoich umiejętności oraz zdobywanie kolejnych osiągnięć zarówno na krajowej, jak i międzynarodowej arenie. W przyszłości dołączyć do profesjonalnej ekipy WorldTour, gdzie mógłbym rozwijać swoje umiejętności wśród najlepszych zawodników na świecie. Poza kolarstwem moim celem jest poszerzanie wiedzy o otaczającym mnie świecie – w szczególności interesują mnie nowinki techniczne i procesy, które stoją za powstawaniem zaawansowanych technologii. Dążę także do niezależności zawodowej i osobistej.
+<P>
+
+Kolarstwo miało ogromny wpływ na moje życie. Dziś nie wyobrażam sobie, by odstawić rower na stałe – jest to nie tylko moja pasja, ale część mojej tożsamości. Z kolei fotografią pasjonuję się już od dłuższego czasu. Uwielbiam uchwycić piękno zachodów słońca, a także eksperymentować z różnymi technikami. Moje plany na rozwój w tej dziedzinie obejmują nie tylko amatorskie fotografowanie, ale także tworzenie stron internetowych, logotypów, wizytówek oraz plakatów. Prowadzę również strony internetowe, co pozwala mi łączyć pasję do technologii z twórczym wyrazem.</p>
+        </div>
+        <button class="toggle-about" onclick="toggleAbout()">Rozwiń</button>
+		
+		
+		 
+    </section>
+
+    <!-- Sekcja Osiągnięcia -->
+    <section id="achievements">
+        <h2 class="section-title">Osiągnięcia</h2>
+        <div class="achievements-container">
+            <ul>
+                <li>-Puchar Polski Tor Wrocław - 1miejsce   </li>
+                <li>-Mistrzostwa Polski Gravelowe 3 miejsce   </li>
+				<li>-Mistrzostwa Polski cx LZS Słubice 2miejsce  </li>
+            </ul>
+            <div class="achievements-extra">
+                <ul>
+                    <li>
+					<p>
+					<strong>Rok 2025</strong> <p>
+<strong>Tor</strong><p>
+-Puchar Polski Kalisz - 2miejsce <p>
+-Puchar Polski Wrocław - 1miejsce <p>
+-OOM - 7miejsce <p>
+<p>
+<strong>Gravel</strong><p>
+-Mistrzostwa Polski 3 miejsce <p>
+<p>
+<strong>Cyclocross</strong> <p><p>
+-Odersky Pohar - Gościęcin 3 miejsce <p>
+-Puchar Polski - Kluczbork 3miejsce <p>
+-Puchar Polski - Słubice 2miejsce <p>
+-Mistrzostwa Polski LZS Słubice 2miejsce <p>
+-Puchar Polski - Szczekociny 2miejs<p>
+-Puchar Polski Koziegłowy 7 miejsce <p>
+-UCI C2 Puchar Polski Owocowy Przełaj - Laskowice Pomorskie 8miejsce <p>
+-UCI C2 Puchar Polski - Władysławowo 11miejsce <p>
+-Puchar Polski Koźminek - 2miejsce <p>
+-Puchar Polski Środa Wielkopolska - 3miejsce <p>
+-Puchar Polski UCI C2 Gościęcin - 8miejsce <p>
+-Puchar Polski Sławno- 4 miejsce <p>
+-Puchar Polski Włoszakowice- 4miejsce <p>
+-Puchar Polski UCI C2 Zielona Góra - 7 miejsce<p>
+-Mistrzostwa Polski Władysławowo - 14miejsce  </li>
+                </ul>
+            </div>
+            <button class="toggle-achievements" onclick="toggleAchievements()">Rozwiń</button>
+            <button class="toggle-collapse" onclick="collapseAchievements()">Zwiń</button>
+        </div>
+    </section>
+
+    <!-- Sekcja Współprace -->
+    <section id="collaborations">
+        <h2 class="section-title">Wspierają mnie:</h2>
+        <p>   </p>
+        <ul>
+           
+            <li><strong>Adyki Wheel</strong>  -  to manufaktura kół karbonowych, która łączy zaawansowaną technologię, lekkość i wytrzymałość. Dzięki tej współpracy mam dostęp do najwyższej jakości kół, które pomagają osiągać lepsze wyniki. To marka, na którą zawsze można liczyć i która doskonale odpowiada moim potrzebom. </li>
+			
+			<P>
+			<p>
+            <li><strong>Victoria Jarocin</strong>  -  to mój obecny klub, który nauczył mnie kolarstwa od podstaw, oferując profesjonalne szkolenie i wsparcie. Dzięki nim rozwinąłem swoje umiejętności i mam możliwość rozwijania pasjii </li>
+        </ul>
+    </section>
+
+    <!-- Sekcja Social Media -->
+    <section id="social">
+        <h2 class="section-title">Social Media</h2>
+        <div class="social-links">
+            <a href="https://instagram.com/_fran___o" target="_blank">Instagram</a>
+            <a href="https://facebook.com/dawid.frankowiak.9" target="_blank">Facebook</a>
+            <a href="mailto:dawidfrankowiak@wp.pl">Email</a>
+        </div>
+    </section>
+
+
+<!-- Sekcja Postaw mi kawę -->
+<section id="buymeacoffee">
+    <h2 class="section-title">Postaw mi kawę</h2>
+    <p>Jeśli chcesz wesprzeć moją pasję i rozwój, możesz postawić mi kawę, Dzięki!</p>
+    <div class="social-links">
+        <a href="https://buycoffee.to/dawid-frankowiak" target="_blank">Postaw mi kawę</a>
+    </div>
+</section>
+
+
+
+    <!-- Powrót do góry -->
+    <button class="back-to-top" onclick="scrollToTop()">↑</button>
+
+    <footer>
+        <p>&copy; 2025 Dawid Frankowiak | Chętny do współpracy: dawidfrankowiak@wp.pl</p>
+    </footer>
+
+    <script>
+        // Funkcja do przewijania na górę strony
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // Funkcja do rozwijania i zwijania osiągnięć
+        function toggleAchievements() {
+            const extra = document.querySelector('.achievements-extra');
+            const toggleButton = document.querySelector('.toggle-achievements');
+            const collapseButton = document.querySelector('.toggle-collapse');
+
+            if (extra.style.display === 'block') {
+                extra.style.display = 'none';
+                toggleButton.textContent = 'Rozwiń';
+                collapseButton.style.display = 'none';
+            } else {
+                extra.style.display = 'block';
+                toggleButton.textContent = 'Zwiń';
+                collapseButton.style.display = 'block';
+            }
+        }
+
+        // Funkcja do zwijania osiągnięć
+        function collapseAchievements() {
+            const extra = document.querySelector('.achievements-extra');
+            const toggleButton = document.querySelector('.toggle-achievements');
+            const collapseButton = document.querySelector('.toggle-collapse');
+
+            extra.style.display = 'none';
+            toggleButton.textContent = 'Rozwiń';
+            collapseButton.style.display = 'none';
+        }
+
+        // Funkcja do rozwijania i zwijania sekcji "O mnie"
+        function toggleAbout() {
+            const extra = document.querySelector('.about-extra');
+            const toggleButton = document.querySelector('.toggle-about');
+
+            if (extra.style.display === 'block') {
+                extra.style.display = 'none';
+                toggleButton.textContent = 'Rozwiń';
+            } else {
+                extra.style.display = 'block';
+                toggleButton.textContent = 'Zwiń';
+            }
+        }
+
+        // Funkcja do śledzenia, kiedy sekcja "O mnie" jest widoczna
+        window.addEventListener('scroll', function() {
+            const aboutSection = document.getElementById('about');
+            const aboutButton = document.querySelector('.toggle-about');
+            const rect = aboutSection.getBoundingClientRect();
+
+            // Jeśli sekcja "O mnie" nie jest widoczna, ukrywamy przycisk "Zwiń"
+            if (rect.top + rect.height < 0 || rect.top > window.innerHeight) {
+                aboutButton.style.display = 'none';
+            } else {
+                aboutButton.style.display = 'inline-block';
+            }
+        });
+    </script>
+</body>
+</html>
